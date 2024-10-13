@@ -4,10 +4,10 @@ document.getElementById('btn-submit').addEventListener('click' , function(){
     const passwordField = document.getElementById('user-password');
     const password = passwordField.value;
     if(email === 'racoctanveen15@gmail.com' && password === 'ihateutanu.'){
-        console.log('User is valid')
+        window.location.href = 'bank.html';
     }
     else{
-        console.log('User is not valid')
+        alert('Tui Password Vul disos tore tejjoputro korlam');
     }
 })
 
