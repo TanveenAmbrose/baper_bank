@@ -15,7 +15,7 @@
             <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto text-white">
                 <div class="p-8 rounded-2xl bg-green-500">
                     <h3 class="text-2xl">Diposite</h3>
-                    <h2 class="text-5xl">$00</h2>
+                    <h2 class="text-5xl">$<span id="diposit-value">00</span></h2>
                 </div>
                 <div class="p-8 rounded-2xl bg-blue-400">
                     <h3 class="text-2xl">Withdraw</h3>
@@ -32,13 +32,13 @@
             <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto text-white">
                 <div class="p-8 rounded-2xl bg-fuchsia-500">
                     <h3 class="text-2xl font-medium">Please Diposite</h3>
-                    <input class="w-9/12 mx-auto mt-4 px-4 block rounded-xl text-black" type="number" name="" id="" placeholder="$ Amount you want to Diposit">
-                    <button class="text-2xl bg-amber-600 mt-4 px-8 py-2 rounded-xl font-semibold hover:bg-green-500">Diposit</button>
+                    <input id="diposit-field" class="w-9/12 mx-auto mt-4 px-4 block rounded-xl text-black" type="text" name=""  placeholder="$ Amount you want to Diposit">
+                    <button id="btn-diposit" class="text-2xl bg-amber-600 mt-4 px-8 py-2 rounded-xl font-semibold hover:bg-green-500">Diposit</button>
                 </div>
                 <div class="p-8 rounded-2xl bg-yellow-500">
                     <h3 class="text-2xl font-medium">Withdraw Here</h3>
-                    <input class="w-9/12 mx-auto mt-4 px-4 block rounded-xl text-black" type="number" name="" id="" placeholder="$ Amount you want to Withdraw">
-                    <button class="text-2xl bg-amber-600 mt-4 px-8 py-2 rounded-xl font-semibold hover:bg-blue-400">Withdraw</button>
+                    <input id="" class="w-9/12 mx-auto mt-4 px-4 block rounded-xl text-black" type="text" name=""  placeholder="$ Amount you want to Withdraw">
+                    <button id="" class="text-2xl bg-amber-600 mt-4 px-8 py-2 rounded-xl font-semibold hover:bg-blue-400">Withdraw</button>
                 </div>
                 
             </div>
@@ -46,6 +46,6 @@
     </main>
 
 
-    <script src="js/login.js"></script>
+    <script src="js/diposit.js"></script>
 </body>
 </html>
