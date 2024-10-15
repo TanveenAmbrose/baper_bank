@@ -2,12 +2,13 @@ document.getElementById('btn-diposit').addEventListener('click', function(){
     
 
     const dipositField = document.getElementById('diposit-field');
-    const dipositAmount = dipositField.value;
-    console.log(dipositAmount);
+    const newDipositAmountString = dipositField.value;
+    const newDipositAmount = parseFloat(newDipositAmountString);
 
     const dipositTotalElement = document.getElementById('diposit-value');
-    const dipositTotal = dipositTotalElement.innerText;
-    console.log(dipositTotal);
+    const previousDipositTotalString = dipositTotalElement.innerText;
+    const previousDipositTotal = parseFloat(previousDipositTotalString);
 
-    dipositTotalElement.innerText = dipositAmount;
+    const currenDipositTotal = previousDipositTotal + newDipositAmount;
+    dipositTotalElement.innerText = currenDipositTotal;
 })
