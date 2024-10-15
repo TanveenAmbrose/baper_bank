@@ -9,6 +9,14 @@ document.getElementById('btn-diposit').addEventListener('click', function(){
     const previousDipositTotalString = dipositTotalElement.innerText;
     const previousDipositTotal = parseFloat(previousDipositTotalString);
 
-    const currenDipositTotal = previousDipositTotal + newDipositAmount;
-    dipositTotalElement.innerText = currenDipositTotal;
+    const currentDipositTotal = previousDipositTotal + newDipositAmount;
+    dipositTotalElement.innerText = currentDipositTotal;
+
+    const totalAmountField = document.getElementById('total-amount');
+    const totalAmountElement = totalAmountField.innerText;
+    const totalAmountNumber = parseFloat(totalAmountElement);
+
+    const currentTotalAmount = totalAmountNumber + newDipositAmount;
+    totalAmountField.innerText = currentTotalAmount;
+
 })
